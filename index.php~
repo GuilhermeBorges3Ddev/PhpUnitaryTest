@@ -43,8 +43,8 @@
 		}
 		else
 		{
-		$db = mysql_connect("localhost","root","") or die(mysql_error());
-		$db_select = mysql_select_db("shopping", $db) or die(mysql_error());
+		$db = mysql_connect("localhost","smilyo_tarun","tractor123") or die(mysql_error());
+		$db_select = mysql_select_db("smilyo_tarun_college", $db) or die(mysql_error());
 		$email= $_POST['email'];
 		$password = $_POST['password'];
 		$isSupplier = isset($_POST['isSupplier']);
