@@ -3,6 +3,7 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "composer": "^4.1.0"
+        "composer": "^4.1.0",
+        "php": "0.0.1"
     }
 }
