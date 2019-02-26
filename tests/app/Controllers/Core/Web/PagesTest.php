@@ -2,12 +2,14 @@
 
 class PagesTest extends PHPUnit\Framework\TestCase
 {
-   public function testRenderReturnsHelloWorld()
+   public function testRenderReturnsHelloDevs()
    {
        
         $pages = new \Controllers\Core\Web\Pages();
        
-        $expected = 'Hello World';
+        $expected = 'Hello Devs';
+       
+        $this->assertEquals($expected, $pages->render());
        
    } 
 }
