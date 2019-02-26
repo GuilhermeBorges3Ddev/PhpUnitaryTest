@@ -29,5 +29,13 @@ class PagesTest extends PHPUnit\Framework\TestCase
         $this->assertTrue(is_array($pages->returnArray()));
         
     } 
+    
+    public function testReturnArrayReturnsNonEmptyArray()
+    {
+        
+        $pages = new \Controllers\Core\Web\Pages();
+        $this->assertTrue((count($pages->returnArray()) > 0));
+        
+    }
 }
 
