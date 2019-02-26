@@ -12,7 +12,7 @@
 
   <body>
       <h1>
-          <?php $pages->render(); ?>
+          <?php echo $pages->render(); ?>
       </h1>
       <pre>
           <?php var_dump($pages->returnArray()); ?>

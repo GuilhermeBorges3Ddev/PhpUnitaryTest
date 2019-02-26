@@ -7,7 +7,7 @@ class Pages
     
     public function render()
     {
-        return 'Hello World';    
+        return 'Hello Devs';    
     }
     
     public function returnTrue()
@@ -17,7 +17,7 @@ class Pages
     
     public function returnArray()
     {
-        return ['Hello','Devs','This','Is','An','Array'];    
+        return ['Hello', 'Devs', 'This', 'Is', 'An', 'Array'];    
     }
     
 }
