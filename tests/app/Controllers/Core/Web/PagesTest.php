@@ -12,5 +12,14 @@ class PagesTest extends PHPUnit\Framework\TestCase
         $this->assertEquals($expected, $pages->render());
        
    } 
+    
+   public function testReturnTrueReturnsTrue()
+   {
+       
+        $pages = new \Controllers\Core\Web\Pages();
+         
+        $this->assertTrue($pages->returnTrue());    
+       
+   } 
 }
 
