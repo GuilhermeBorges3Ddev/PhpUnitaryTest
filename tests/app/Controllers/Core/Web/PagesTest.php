@@ -20,6 +20,14 @@ class PagesTest extends PHPUnit\Framework\TestCase
          
         $this->assertTrue($pages->returnTrue());    
        
-   } 
+   }
+    
+    public function testReturnArrayReturnsValidArray()
+    {
+        
+        $pages = new \Controllers\Core\Web\Pages();
+        $this->assertTrue(is_array($pages->returnArray()));
+        
+    } 
 }
 
