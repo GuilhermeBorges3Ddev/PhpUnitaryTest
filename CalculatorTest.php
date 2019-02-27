@@ -52,5 +52,16 @@ class CalculatorTests extends PHPUnit\Framework\TestCase
 		$result = $this->calculator->add($a, $b);
 		$this->assertEquals($expected, $result);
 	}
+
+	/** Double test incorporated */
+	public function testWithStub()
+	{
+		// Created a stub for the Calculator class
+		$Calculator = $this->getMockBuilder($calculator)->getMock();
+
+		//Stub configured
+		$Calculator->expects($this->any())->method('add')->will($this->returnValue(6));
+		$this->assertEquals(6, $Calculator->add(100,100));
+	}
 }
 ?>
